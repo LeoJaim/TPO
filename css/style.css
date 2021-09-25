@@ -5,7 +5,38 @@
 * {
     box-sizing: border-box;
   }
+
+  body {background-color: bisque;}
+  html {
+    font-family: "Lucida Sans", sans-serif;
+  }
+
+  header {
+    background-color: #9933cc;
+    background-image: image();
+    color: #0e1027;
+    padding: 15px;
+    background-image: url(../artifacts/800x428_Industry_Oil_and_Gas.jpg);
+  }
+
+/*.fondologo {
+    background-image: url(../artifacts/OIP\ 288-194.jfif);
+}*/
+  footer {
+    background-color: rgba(29, 157, 216, 0.281);
+    color: #000000;
+    padding: 0px;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    height: 40px;
+    text-align: center;  
+  }
+  .centrado{text-align: center;} 
   
+  .fondo{background-color: rgba(29, 157, 216, 0.281);}
+
   .row::after {
     content: "";
     clear: both;
@@ -30,29 +61,6 @@
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
   
-  html {
-    font-family: "Lucida Sans", sans-serif;
-  }
-  
-  .header {
-    background-color: #9933cc;
-    color: #ffffff;
-    padding: 15px;
-  }
-
-  .footer {
-    background-color: #9933cc;
-    color: #ffffff;
-    padding: 5px;
-    margin-bottom: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 99%;
-    height: 40px;
-    text-align: center;
-    
-  }
-
   .menu ul {
     list-style-type: none;
     margin: 0;
@@ -63,7 +71,7 @@
     padding: 8px;
     margin-bottom: 20px;
     height: 4em;
-    background-color: #33b5e5;
+    background-color: #409bd8;
     color: #ffffff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   }

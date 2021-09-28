@@ -3,7 +3,51 @@ h3{
     font-style: italic;
 }
 h1{
-    font-size: 1rem;
-
+    font-size: 2rem;
+}
+.titulo-principal{
+    font-size: 2rem;
+    animation-name: titulo;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
 }
 p{ font-size: 0.8rem;}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+iframe{
+    max-width: 100%;
+    max-height: 100%;
+}
+.textodestacado{
+    font-size: 1.5rem;
+    font-weight: 200;
+    background: brown;
+    padding: 10px;
+    color: cornsilk;
+}
+@keyframes titulo {
+from{color: black;}
+to{color: rgb(207, 31, 31);}
+}
+
+.ayuda {
+    position: relative;
+    display: inline-block;
+    /*border-bottom: 1px dotted black;*/
+}
+.ayuda .ayudatexto {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: blanchedalmond;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}
+.ayuda:hover .ayudatexto{
+    visibility: visible;
+}

@@ -8,7 +8,7 @@
 
   body {background-color: bisque;}
   html {
-    font-family: "Lucida Sans", sans-serif;
+    font-family: "Lucida Sans", "sans-serif";
   }
 
   header {
@@ -36,7 +36,16 @@
   }
 .centrado{text-align: center;} 
   
-.fondo{background-color: rgba(29, 157, 216, 0.281);}
+.fondo{
+  background-color:brown;
+  height: 5em; 
+  vertical-align: top;
+  padding: 0px;
+  color: white;
+}
+.altura{
+  height:100%;
+}
 
 .foottext{
     text-align: center;
@@ -72,6 +81,8 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    min-width:100%;
+    min-height: 100%;
   }
   
   .menu li {

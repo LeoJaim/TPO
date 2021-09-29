@@ -16,6 +16,9 @@ img{
     max-width: 100%;
     max-height: 100%;
 }
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
 iframe{
     max-width: 100%;
     max-height: 100%;

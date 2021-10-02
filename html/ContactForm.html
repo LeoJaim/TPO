@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/as.js"></script>
     <link rel="icon" href="../artifacts/microchip-solid.svg">
     <title>Quasar IT</title>
 </head>
@@ -22,80 +23,76 @@
     </header>
     <div class="row">
         <div class="col-12 col-s-12 btn-primary centrado" style="background-color: #409bd8;">
-            <h2 class="centrado btn-group-vertical" >Formulario de Contacto</h2>
+            <h2 class="centrado btn-group-vertical">Formulario de Contacto</h2>
         </div>
         <div class="col-12 col-s-12"></div>
         <div class="col-12 col-s-12">
-            <p class="btn btn-sm"  role="banner"></p>
-                <a href="../index.html" class="btn btn-primary btn-lg active" style="background-color: #409bd8;" role="button" aria-pressed="true">Inicio</a>
-                <a href="./PerfilEmpresa.html" class="btn btn-primary btn-lg active" style="background-color: #409bd8;" role="button" aria-pressed="true">Quienes Somos</a>
-                <a href="./Servicios.html" class="btn btn-primary btn-lg active" style="background-color: #409bd8;" role="button" aria-pressed="true">Servicios</a>
-                <a href="./Resume.html" class="btn btn-primary btn-lg active" style="background-color: #409bd8;" role="button" aria-pressed="true">Perfil Profesional</a>
+            <p class="btn btn-sm" role="banner"></p>
+            <a href="../index.html" class="btn btn-primary btn-lg active" style="background-color: #409bd8;"
+                role="button" aria-pressed="true">Inicio</a>
+            <a href="./PerfilEmpresa.html" class="btn btn-primary btn-lg active" style="background-color: #409bd8;"
+                role="button" aria-pressed="true">Quienes Somos</a>
+            <a href="./Servicios.html" class="btn btn-primary btn-lg active" style="background-color: #409bd8;"
+                role="button" aria-pressed="true">Servicios</a>
+            <a href="./Resume.html" class="btn btn-primary btn-lg active" style="background-color: #409bd8;"
+                role="button" aria-pressed="true">Perfil Profesional</a>
         </div>
         <div class="col-10">
-            <form>
+            <form class="needs-validation">
                 <div class="form-row">
-                    <div class="col-md-6 mb-3">
-                        <label for="validationServer01">Nombre</label>
-                        <input type="text" class="form-control is-valid" id="validationServer01" value="" required>
+                    <div class="col-md-5 mb-3">
+                        <label for="validationCustom01">Nombre</label>
+                        <input type="text" class="form-control" id="validationCustom01" value="" required>
                         <div class="valid-feedback">
                             Correcto!
                         </div>
                     </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="validationServer02">Apellido</label>
-                        <input type="text" class="form-control is-valid" id="validationServer02" value="" required>
+                    <div class="col-md-5 mb-3">
+                        <label for="validationCustom02">Apellido</label>
+                        <input type="text" class="form-control" id="validationCustom02" value="" required>
                         <div class="valid-feedback">
                             Correcto!
                         </div>
                     </div>
                 </div>
                 <div class="form-row">
-                    <div class="col-md-6 mb-3">
-                        <label for="validationServer03">Ciudad</label>
-                        <input type="text" class="form-control is-invalid" id="validationServer03"
-                            aria-describedby="validationServer03Feedback" required>
-                        <div id="validationServer03Feedback" class="invalid-feedback">
-                            Por favor ingresar la ciudad.
+                    <div class="col-md-5 mb-3">
+                        <label for="validationCustom03">Ciudad</label>
+                        <input type="text" class="form-control" id="validationCustom03" required>
+                        <div class="invalid-feedback">
+                            Por favor ingresar una Ciudad
                         </div>
                     </div>
-                    <div class="col-md-3 mb-3">
-                        <label for="validationServer04">Provincia</label>
-                        <select class="custom-select is-invalid" id="validationServer04"
-                            aria-describedby="validationServer04Feedback" required>
-                            <option selected disabled value="">elegir...</option>
+                    <div class="col-md-5 mb-3">
+                        <label for="validationCustom04">Provincia</label>
+                        <select class="custom-select" id="validationCustom04" required>
+                            <option selected disabled value="">Elegir...</option>
                             <option>...</option>
                         </select>
-                        <div id="validationServer04Feedback" class="invalid-feedback">
-                            Por favor ingrese una provincia válida.
+                        <div class="invalid-feedback">
+                            Por favor ingresar un Provincia
                         </div>
                     </div>
-                    <div class="col-md-3 mb-3">
-                        <label for="validationServer05">Zip</label>
-                        <input type="text" class="form-control is-invalid" id="validationServer05"
-                            aria-describedby="validationServer05Feedback" required>
-                        <div id="validationServer05Feedback" class="invalid-feedback">
-                            Por favor ingrese un código postal válido.
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-5 mb-5">
-                            <div class="form-check">
-                                <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3"
-                                    aria-describedby="invalidCheck3Feedback" required>
-                                <label class="form-check-label" for="invalidCheck3">
-                                    Acepta los términos y condiciones.
-                                </label>
-                                <div id="invalidCheck3Feedback" class="invalid-feedback">
-                                    Debe aceptar para continuar.
-                                </div>
-                            </div>
+                    <div class="col-md-5 mb-3">
+                        <label for="validationCustom05">Código Postal</label>
+                        <input type="text" class="form-control" id="validationCustom05" required>
+                        <div class="invalid-feedback">
+                            Por favor ingresar un Código Postal.
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12">
-                    <button class="btn btn-primary" type="submit">Enviar</button>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Aceptar los términos y condiciones.
+                        </label>
+                        <div class="invalid-feedback">
+                            Primero debe acpetar antes de evniar.
+                        </div>
+                    </div>
                 </div>
+                <button class="btn btn-primary" type="submit">Enviar Formulario</button>
             </form>
         </div>
     </div>
@@ -103,4 +100,5 @@
         <p class="btn-primary"> <br>Todos los derechos reservados - Copyright (c)</p>
     </footer>
 </body>
+
 </html>

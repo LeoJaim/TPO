@@ -6,7 +6,22 @@
 {
     alert("La resolución de pantalla que tienes en este momento es de: " + window.innerWidth + " x " + window.innerHeight);
 }*/
-
+function loadPage()
+ {
+     fillCombo(); 
+     console.log("ENTRO AL LOAD");
+ }
+ /**
+* This method fills the dropdownlist with regions information
+*/
+function fillCombo(){
+ var regions = ["CABA", "Provincia de Buenos Aires", "Santa Fe","Corrientes","Chaco","Misiones","Entre Ríos","Salta","Formosa","Jujuy","Catamarca", "Neuquen","Chubut","Río Negro","La Pampa","Tierra del Fuego", "Stgo. del Estero","Córdoba","San Luis","Mendoza"];
+ var select = document.getElementById("combo");
+ for(var i=0;i<regions.length;i++){
+   select.options[i] = new Option(regions[i]);
+ }
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
 (function() {
     'use strict';
     window.addEventListener('load', function() {

@@ -23,15 +23,15 @@
     background-image: url(../artifacts/OIP\ 288-194.jfif);
 }*/
   footer {
-    background-color: rgba(29, 157, 216, 0.281);
-    color: #000000;
+    background-color: #0d6efd;
+    color: white;
     padding: 0px;
     margin-bottom: 5px;
     margin-top: 0em;
     position: relative;
     bottom: 0;
     width: 99%;
-    height: 30px;
+    height: 38px;
     text-align: center;
   }
 .centrado{text-align: center;} 
@@ -51,6 +51,7 @@
     text-align: center;
     font-size: 0.8rem;
     margin-top: 0em;
+    /*background-color: #0d6efd;*/
 }
 
 .row::after {

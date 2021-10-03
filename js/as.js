@@ -15,7 +15,7 @@ function loadPage()
 * This method fills the dropdownlist with regions information
 */
 function fillCombo(){
- var regions = ["CABA", "Provincia de Buenos Aires", "Santa Fe","Corrientes","Chaco","Misiones","Entre Ríos","Salta","Formosa","Jujuy","Catamarca", "Neuquen","Chubut","Río Negro","La Pampa","Tierra del Fuego", "Stgo. del Estero","Córdoba","San Luis","Mendoza"];
+ var regions = ["CABA", "Buenos Aires", "Santa Fe","San Juan","Corrientes","Chaco","Misiones","Entre Ríos","Salta","Formosa","La Rioja","Tucumán","Jujuy","Catamarca", "Neuquen","Chubut","Río Negro","La Pampa","Tierra del Fuego", "Stgo. del Estero","Córdoba","San Luis","Mendoza","Santa Cruz"];
  var select = document.getElementById("combo");
  for(var i=0;i<regions.length;i++){
    select.options[i] = new Option(regions[i]);
